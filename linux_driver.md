@@ -1,13 +1,13 @@
 # Device Tree
 ## DTC/DTS/DTB
 
-![driver.png](https://raw.githubusercontent.com/ji92/linux-driver/main/driver.png)
+![driver.png](https://raw.githubusercontent.com/ji92/linux-driver/main/img/driver.png)
 + DTS经DTC编译后生成DTB文件，可由linux内核解析
 + DTS文件可能包含很多公共部分，可以提炼为dtsi文件（对应C语言的头文件），在DTS文件中包含
 + 为电路板制作镜像时，一般会单独留下一块很小的区域存放dtb文件，bootloader引导内核时会先读取dtb到内存
 ## DTS grammer
 ### hardware structure
-![driver.png](https://raw.githubusercontent.com/ji92/linux-driver/main/hardware_structure.png)
+![driver.png](https://raw.githubusercontent.com/ji92/linux-driver/main/img/hardware_structure.png)
 ### DTC code
 ``` dts
 /{  //root
