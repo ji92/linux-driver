@@ -1,3 +1,15 @@
+# Standard Network card driver framework
+使用总线设备驱动框架，当有新的驱动注册，总线进行两者的匹配，匹配后调用probe函数，进行初始化。
++ PCI设备的扫描发生操作系统的启动过程中
+## driver
+``` c
+
+
+```
+## device
+``` c
+
+```
 # Device Tree
 ## DTC/DTS/DTB
 
