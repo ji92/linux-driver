@@ -2,33 +2,23 @@
 
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904191845.png)
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904192035.png)
-
-IPsec是个框架，具体的协议由IKE进行协商
++ IPsec是个框架，具体的协议由IKE进行协商
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904192232.png)
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904192243.png)
-
-无限制的网络
++ 无限制的网络
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904192402.png)
-
-主要用ESP和IKE
++ 主要用ESP和IKE
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904192450.png)
-
-使用IKE进行协商完之后的结果，就是安全联盟SA
-IKE SA：
-IPsec SA：
++ 使用IKE进行协商完之后的结果，就是安全联盟SA
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904192506.png)
-
-AH-ESP和AH基本不会用
++ AH-ESP和AH基本不会用
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904193338.png)
-
-外面的是global ip，里面的是private ip,路由不可达
++ 外面的是global ip，里面的是private ip,路由不可达
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904193634.png)
-
-或者：通讯点到通讯点全局可路由，就是传输模式；否则就是隧道模式
++ 或者：通讯点到通讯点全局可路由，就是传输模式；否则就是隧道模式
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904194032.png)
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904194156.png)
-
-手动配置流程，可忽略，重点了解IKE协商流程
++ 手动配置流程，可忽略，重点了解IKE协商流程
 
 # IPsec 详解
 
