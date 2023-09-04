@@ -175,9 +175,9 @@ DPD检测主要靠超时计时器，超时计时器用于判断是否再次发�
 DPD很实用，应该开启。至于选择哪个模式，则根据实际需要，周期模式可以相对快地找出问题peer，但较消耗带宽；按需模式，较节约带宽，但只有当发出加密包后收不到解密包才会去探测。
 
 # 参考资料：
-[https://www.youtube.com/watch?v=oGIYzguqoJM&amp;t=12s](https://www.youtube.com/watch?v=oGIYzguqoJM&t=12s)
-[网络安全之IPsec详解](https://blog.csdn.net/qq_43561370/article/details/111814842)
-[IPSec介绍](https://blog.csdn.net/NEUChords/article/details/92968314)
-[NAT-T：IPsec穿越NAT之道](https://blog.csdn.net/u014023993/article/details/86634339)
-[GFW原理和Shadowsocks/ShadowsocksR/V2ray/Trojan又是如何突破封锁的？](https://www.youtube.com/watch?v=k80cu16M-rw)
-[IPsec Wikipedia](https://en.wikipedia.org/wiki/IPsec#Authentication_Header)
+1. [https://www.youtube.com/watch?v=oGIYzguqoJM&amp;t=12s](https://www.youtube.com/watch?v=oGIYzguqoJM&t=12s)
+2. [网络安全之IPsec详解](https://blog.csdn.net/qq_43561370/article/details/111814842)
+3. [IPSec介绍](https://blog.csdn.net/NEUChords/article/details/92968314)
+4. [NAT-T：IPsec穿越NAT之道](https://blog.csdn.net/u014023993/article/details/86634339)
+5. [GFW原理和Shadowsocks/ShadowsocksR/V2ray/Trojan又是如何突破封锁的？](https://www.youtube.com/watch?v=k80cu16M-rw)
+6. [IPsec Wikipedia](https://en.wikipedia.org/wiki/IPsec#Authentication_Header)
