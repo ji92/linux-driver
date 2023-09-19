@@ -7,8 +7,6 @@
 
 所谓passthrough，就是指guest VM可以透过VMM，直接访问I/O硬件，这样guest VM的I/O操作路径几乎和无虚拟化环境下的I/O路径相同，性能自然是非常高的
 
-# 为什么要直通
-
 # 直通有哪些技术
 
 vfio(virtual function io)直通和SR-IOV
