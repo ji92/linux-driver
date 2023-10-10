@@ -23,6 +23,9 @@
 
 # 参考资料
 [华为FusionSphere之虚拟机和模版---后半段](https://www.bilibili.com/video/BV1pt411j7pg/?spm_id_from=333.337.search-card.all.click&vd_source=00c7bb189a105f317a347bc7d83911b5)
+
 [FusionSphere openstack](https://www.bilibili.com/video/BV17b411L7iL/?spm_id_from=333.337.search-card.all.click&vd_source=00c7bb189a105f317a347bc7d83911b5)
+
 [FusionSphere产品文档](https://support.huawei.com/hedex/hdx.do?docid=EDOC1100092091&id=ZH-CN_TOPIC_0239789907)
+
 [PCI Passthrough（PCI直通）虚拟机的配置方法](http://3ms.huawei.com/km/blogs/details/5984789)
