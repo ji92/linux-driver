@@ -15,6 +15,7 @@
 + 虚拟机镜像(img):只用于虚拟机
 + os镜像(iso)：虚拟机和物理机都可以用
 ## FusionSphere：PCI直通到虚拟机
+[FS6.0 PCI直通虚拟机](http://w3.huawei.com/unisearch/index.html?keyword=pci%E7%9B%B4%E9%80%9A%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%AE&lang=zh#lang=zh&newKeyword=pci%E7%9B%B4%E9%80%9A%E8%99%9A%E6%8B%9F%E6%9C%BA%E9%85%8D%E7%BD%AE)
 ## 虚拟机迁移
 + HA保证，虚拟迁移后关闭物理主机
 ## 快照技术
