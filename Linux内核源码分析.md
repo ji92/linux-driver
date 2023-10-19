@@ -95,12 +95,12 @@
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20231017212539.png)
 
 ### 调度策略
-+ SCHED_NORMAL:普通进程调度策略，使task 选择CFS调度器来调度运行；
++ SCHED_NORMAL:普通进程调度策略，使task选择CFS调度器来调度运行；
 + SCHED_FIFO:实时进程调度策略，先进先出调度没有时间片，没有更高优先级的状态下，只有等待主动让出CPU
 + SCHED_RR：实时进程调度策略，时间片轮转，进程使用完时间片之后加入优先级对应运行队列当中的尾部，把CPU让给同等优先级的其它进程
 + SCHED_BATCH：普通进程调度策略，批量处理，使task选择CFS调度器来调度运行
 + SCHED_IDLE:普通进程调度策略，使task以最低优先级选择CFS调度器来调度运行
-+ SCHED_DEADLINE:限期进程调度策略，使task选择Deadline 调度器来调度运行
++ SCHED_DEADLINE:限期进程调度策略，使task选择Deadline调度器来调度运行
 > 其中 Stop调度器和IDLE-task调度器，仅使用于内核，用户没有办法进行选择。
 ### CFS（complete fair schedule）调度器
 + CFS调度器引入权重，使用权重代表进程的优先级nice值，各个进程按照权重比例分配CPU时间
@@ -116,6 +116,15 @@
 + 主调度器：通过调用schedule()函数来完成进程的选择和切换。
 + 周期性调度器：根据频率自动调用scheduler_tick 函数，作用根据进程运行时间触发调度
 + 上下文切换：主要做两个事情（切换地址空间、切换寄存器和栈空间）。
+
+### SMP和NUMA架构
+
+### CPU管理
+
+### 实战1
+### 实战2
+
+### RCU(Read-Copy-Update)机制
 
 # 参考资料
 
