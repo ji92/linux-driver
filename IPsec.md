@@ -134,6 +134,7 @@ ESP同样被当做一种IP协议对待，紧贴在ESP头前的IP头，协议号�
     + 适用于较为复杂的拓扑和较高安全性的网络
   
 **IKE第一阶段**
+
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904201941.png)
 + 用途
   + 协商创建一个通信信道(IKE SA)
