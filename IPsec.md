@@ -27,6 +27,11 @@
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904194156.png)
 + 手动配置流程，可忽略，重点了解IKE协商流程
 
+![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20231026215759.png)
+
+![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20231026215812.png)
+
+
 # IPsec 详解
 
 ## 简介
