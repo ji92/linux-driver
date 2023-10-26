@@ -66,6 +66,7 @@ IPsec是一个开放的组件，是IPv4套件的一部分。IPsec使用了下面
 ## IPsec的两种模式
 + 传送模式
   + 当协议在一台主机上实现时使用，IPsec头部被插在IP头后面。主要为上层协议提供保护，加密和可选择的认证，用于在两个主机之间进行端到端通信。
+  
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904195816.png)
 
 + 隧道模式
@@ -73,6 +74,7 @@ IPsec是一个开放的组件，是IPv4套件的一部分。IPsec使用了下面
   + 适用于隧道结束在某个非目的地(安全网关，防火墙)该目的地结束IPsec隧道，还原成原来数据包在本地网（局域网）传输（局域网不用理解IPsec）
   + 隧道模式的另一个好处是可以将聚集TCP连接当成一个流加密。可以抵抗traffic analysis
   + 加密发生在外部主机与安全网关之间或者发生在两个安全网关之间。
+  
   ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904200003.png)
 
 ## IPsec中的安全组合(SA)
@@ -100,6 +102,7 @@ AH(Authentication Header)
 
 AH的协议号是51，AH头比ESP头简单很多，因为它不提供机密性，不会加密所保护的数据报。不论是在传输模式还是在隧道模式下，AH提供对数据报的保护时，它保护的是整个IP数据包（易变的字段除外，如IP头中的TTL和TOS字段）
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904201200.png)
+
 ESP协议
 + 无连接数据完整性
 + 数据源认证
@@ -110,6 +113,7 @@ ESP通常使用DES、3DES、AES等加密算法实现数据加密，使用MD5或S
 
 ESP同样被当做一种IP协议对待，紧贴在ESP头前的IP头，协议号为50.
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904201249.png)
+
 + 在隧道模式中，ESP保护整个IP包，整个IP包将会以ESP载荷的方式加入新建的数据包，同时，系统根据隧道起点和终点等参数，建立一个隧道IP头，作为这个数据包的新IP头，ESP头夹在隧道IP头和原始IP头之间，并点缀ESP尾。
 + ESP提供加密服务，所以原始IP包和ESP尾以密文的形式出现。
 + ESP在验证过程中，只对ESP头部、原始数据包IP包头、原始数据包数据进行验证；只对原始的整个数据包进行加密，而不验证数据。
@@ -119,6 +123,7 @@ ESP同样被当做一种IP协议对待，紧贴在ESP头前的IP头，协议号�
 + ESP在传输模式下会验证外部IP头部，将导致校验失败
 + AH因为提供数据来源确认（源IP地址一旦改变，AH校验失败），所以无法穿越NAT
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904201621.png)
+
 + ESP认证数据：是变长字段，只有选择了验证服务时才需要有该字段。
 + 很多情况下，AH的功能已经能满足安全的需要，ESP由于需要使用高强度的加密算法，需要消耗更多的计算机运算资源，使用上受到一定限制。
 
@@ -136,6 +141,7 @@ ESP同样被当做一种IP协议对待，紧贴在ESP头前的IP头，协议号�
 **IKE第一阶段**
 
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20230904201941.png)
+
 + 用途
   + 协商创建一个通信信道(IKE SA)
   + 对该信道进行认证
