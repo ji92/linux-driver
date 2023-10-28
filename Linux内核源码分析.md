@@ -698,12 +698,37 @@ MODULE_AUTHOR("0voice 2023/07/02"); // 声明由那一位作者或机构单位�
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20231024210450.png)
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20231024212612.png)
 
-## socket编程
-![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20231024213527.png)
+
+
+
+## 传输层协议
+### TCP
+### UDP
+### ICMP
+### SCTP
+### DCCP
+
+### socket编程
+![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20231024213527.png) 
+
+## 网络层协议
+## 路由选择子系统
+
+### ARP与邻接子系统
+### Network Address Translation(NAT)
+### netfilter框架
+### IPsec
+
+## net_device子系统
+
+## NIC收发包流程
+
+
+
 
 # 参考资料
 
 + [零声教育](https://gitlab.0voice.com/linux)
 + [深入理解Linux进程调度](https://mp.weixin.qq.com/s/3rV6d04QjO9_8Nkq9SrWYg)
-+ [小林codeing](https://xiaolincoding.com/)
++ [小林coding](https://xiaolincoding.com/)
 + [深入理解Linux线程同步](https://mp.weixin.qq.com/s?__biz=Mzg2OTc0ODAzMw==&mid=2247508887&idx=1&sn=a47f27306807f0fca638b6de4f762451&chksm=ce9abfb9f9ed36afb1c782b4346e8f01f24897df55e6ea85b234f68218b6acddf3ef2069c68c&scene=178&cur_album_id=2519398872503353344#rd)
