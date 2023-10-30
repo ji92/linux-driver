@@ -718,6 +718,7 @@ MODULE_AUTHOR("0voice 2023/07/02"); // 声明由那一位作者或机构单位�
 + 接收分组
   + 在分组转发到ip_rcv之后，必须检查接收到的信息确保它是正确的。主要检查计算的校验和与首部中存储的校验和是否一致。其他的检查包括分组是否达到了IP首部的最小长度，分组的协议是否确实是IPv4。 
 + 分组转发
+
   ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20231029180749.png)
   
 + 分组发送
