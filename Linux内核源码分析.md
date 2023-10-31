@@ -824,6 +824,10 @@ MODULE_AUTHOR("0voice 2023/07/02"); // 声明由那一位作者或机构单位�
 
 + [小林-coding: 一致性哈希](https://xiaolincoding.com/os/8_network_system/hash.html)
 
+### RDMA
++ [刘伟 - 高性能架构基本原理、设计方案](https://www.bilibili.com/video/BV1yF411X7Hp/?spm_id_from=333.337.search-card.all.click&vd_source=00c7bb189a105f317a347bc7d83911b5)
+
+
 # 参考资料
 
 + [零声教育](https://gitlab.0voice.com/linux)
