@@ -825,7 +825,7 @@ MODULE_AUTHOR("0voice 2023/07/02"); // 声明由那一位作者或机构单位�
 + [小林-coding: 一致性哈希](https://xiaolincoding.com/os/8_network_system/hash.html)
 
 ### RDMA
-+ [刘伟 - 高性能架构基本原理、设计方案](https://www.bilibili.com/video/BV1yF411X7Hp/?spm_id_from=333.337.search-card.all.click&vd_source=00c7bb189a105f317a347bc7d83911b5)
++ [RDMA高性能架构](https://github.com/ji92/linux-driver/blob/main/RDMA%E9%AB%98%E6%80%A7%E8%83%BD%E6%9E%B6%E6%9E%84.md)
 
 
 # 参考资料
