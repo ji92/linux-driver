@@ -852,15 +852,7 @@ MODULE_AUTHOR("0voice 2023/07/02"); // 声明由那一位作者或机构单位�
   + SE(system error): 硬件错误触发的异常
 ### 上半部
 #### 中断控制器
-
-#### 中断状态
-+ inactive: 中断源没有发生中断
-+ pending： 中断源已发送中断，等待处理器处理
-+ active：处理器已经确认中断，正在处理
-+ active and pending：处理器正在处理中断，相同的中断源又发送了一个中断
-+ inactive -> pending: 外围设备发送了中断
-+ pending -> active：处理器确认中断
-+ active -> inactive：处理器处理完中断
++ [Linux中断子系统（一）-中断控制器及驱动分析 ](https://www.cnblogs.com/LoyenWang/p/12996812.html)
 
 #### 中断的开启/禁止
 + 软件可以禁止外部中断，使处理器不响应所有中断请求，但是不可屏蔽中断是个例外
