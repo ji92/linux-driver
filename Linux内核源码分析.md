@@ -1001,7 +1001,7 @@ struct page {
         struct {    /* slab, slob and slub */
             union {
                 // 用于指定当前 page 位于 slab 中的哪个具体管理链表上。
-                struct list_head slab_list;
+                struct list_head slab_list; // slab 的管理结构中有众多用于管理 page 的链表，比如：完全空闲的 page 链表，完全分配的 page 链表，部分分配的 page 链表，slab_list 用于指定当前 page 位于 slab 中的哪个具体链表上
                 struct {
                     // 当 page 位于 slab 结构中的某个管理链表上时，next 指针用于指向链表中的下一个 page
                     struct page *next;
@@ -1087,6 +1087,15 @@ enum pageflags {
         ................
 };
 ```
+#### Hugepage
++ 优点：
+  + page fault减少，性能提高
+  + 使用巨页，页表项减少，占用内存减少，fork进程时页表拷贝开销较小
+  + 每个页表项覆盖的物理内存更多，TLB miss降低
++ 缺点：
+  + 一旦发生page fault，代价较大
+##### compound page   
+
 
 
 ## 内存分配
