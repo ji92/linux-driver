@@ -1106,6 +1106,9 @@ struct page {
 ### LRU
 ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/LRU%E5%8F%8C%E9%93%BE%E8%A1%A8.drawio.png)
 
+### 物理页的反向映射
++ 当内存回收开始时，如果采用正向映射，即遍历页表找到VA->PA映射并解除映射关系效率低下。因此内核实现了反向映射机制，即PA->VA的映射，从而物理内存被回收时可以迅速解除映射。
++ [匿名页的反向映射](https://xiaolincoding.com/os/3_memory/linux_mem2.html#_6-1-%E5%8C%BF%E5%90%8D%E9%A1%B5%E7%9A%84%E5%8F%8D%E5%90%91%E6%98%A0%E5%B0%84)
 
 ## 内存规整
 ### 页面迁移和反碎片技术
