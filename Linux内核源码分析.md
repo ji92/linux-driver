@@ -1064,6 +1064,29 @@ struct page {
 
 } _struct_page_alignment;
 ```
++ struct page时内核中数量最多，访问最为频繁，使用场景最复杂的结构体。为节省内存开销，结构体内部使用了很多union和bitmap。
++ 
+
+```c
+enum pageflags {
+	PG_locked,		/* Page is locked. Don't touch. */ // 表示该物理页面已经被锁定，如果该标志位置位，说明有使用者正在操作该 page , 则内核的其他部分不允许访问该页， 这可以防止内存管理出现竞态条件，例如：在从硬盘读取数据到 page 时。
+	PG_referenced, // 表示该物理页面刚刚被访问过。
+	PG_uptodate, // 表示该物理页的数据已经从块设备中读取到内存中，并且期间没有出错。
+	PG_dirty,    // 表示该物理内存页中的数据已经被进程修改，但还没有同步会磁盘中。
+	PG_lru,      // 表示该物理内存页现在被放置在哪个 lru 链表上
+	PG_active,   // 表示该物理页位于 active list 链表中。PG_referenced 和 PG_active 共同控制了系统使用该内存页的活跃程度，在内存回收的时候这两个信息非常重要
+	PG_slab,     // 表示该物理内存页属于 slab 分配器所管理的一部分
+	PG_reserved, // 
+        PG_compound, // 表示物理内存页属于复合页的其中一部分
+	PG_private,  // 标志被置位的时候表示该 struct page 结构中的 private 指针指向了具体的对象。不同场景指向的对象不同		
+	PG_writeback,// 表示该物理内存页正在被内核的 pdflush 线程回写到磁盘中		
+	PG_reclaim,  // 表示该物理内存页已经被内核选中即将要进行回收。		
+#ifdef CONFIG_MMU
+	PG_mlocked,		/* Page is vma mlocked */ // 表示该物理内存页被进程通过 mlock 系统调用锁定常驻在内存中，不会被置换出去。
+	PG_swapcache = PG_owner_priv_1,	 // 表示该物理内存页处于 swap cache 中。 struct page 中的 private 指针这时指向 swap_entry_t 。
+        ................
+};
+```
 
 
 ## 内存分配
