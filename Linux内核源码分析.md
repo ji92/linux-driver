@@ -1402,8 +1402,20 @@ enum pageflags {
 + [linux中断--进程上下文和中断上下文](https://www.cnblogs.com/stemon/p/5148869.html)
 
 # 文件管理
+## 磁盘结构
+## 文件系统
+### EXT2
 
-
+## inode
+### inode 结构体
+## 文件创建
+## 文件删除
+## 文件修改
+## 硬链接
+## 软连接
+## 磁盘数据存储方式
+## superblock
+## bootblock
 
 # 参考资料
 
