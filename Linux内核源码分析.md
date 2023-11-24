@@ -1219,9 +1219,9 @@ enum pageflags {
     ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20231029181209.png)
 
 ### ICMP
-
 + [小林-coding：ICMP](https://xiaolincoding.com/network/4_ip/ip_base.html#icmp)
-+ ICMP重定向
++ [互联网控制消息协议](https://zh.wikipedia.org/wiki/%E4%BA%92%E8%81%94%E7%BD%91%E6%8E%A7%E5%88%B6%E6%B6%88%E6%81%AF%E5%8D%8F%E8%AE%AE)
+  + ICMP协议簇比较多，不同的类型有数据包格式，需要对应看下
 
 ### 路由选择子系统
 
