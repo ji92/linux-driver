@@ -1190,6 +1190,7 @@ enum pageflags {
 ### TCP
 
 ### UDP
++ [用户数据报协议](https://zh.wikipedia.org/zh-hans/%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%8D%8F%E8%AE%AE)_
 
 ### SCTP
 
@@ -1235,6 +1236,7 @@ enum pageflags {
 + Linux邻接子系统负责发现当前链路上的节点，并且将L3(网络层)地址转换为L2(数据链路层)地址。在IPv4当中，实现这种转换的协议为**地址解析协议（Address Resolution Protocol,ARP）**, 而在IPv6则为**邻居发现协议（Neighbour Discovery Protocol，NDISC或ND）**，邻接子系统为执行L3到L2映射提供了独立于协议的基础设施。
 + 在IPv4中，使用邻接协议为ARP，相应的请求和应答分别被称为ARP请求和ARP应答，在IPv6中，使用的邻接协议为NDISC，相应的请求和应答分别称为邻居请求和邻居通告
 + 为避免在每次传输数据包时都发送请求，内核将L3地址和L2地址之间的映射存储在邻接表的数据结构中。在IPv4中，这个表就是ARP表，有时也称为ARP缓存。在IPv6中，邻接表是NDISC表（也叫NDISC缓存）
++ [地址解析协议](https://zh.wikipedia.org/zh-hans/%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE)
 
 > 用户空间可以通过iproute2包中的命令ip neigh，也可以使用net_tools包中的命令arp和邻接子系统进行交互
 > ![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20231029172056.png)
