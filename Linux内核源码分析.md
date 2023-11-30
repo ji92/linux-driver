@@ -1188,8 +1188,26 @@ enum pageflags {
 ## 传输层
 
 ### TCP
-+ [传输控制协议](https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE#%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6)
+#### 协议格式
+![](https://cdn.xiaolincoding.com//mysql/other/format,png-20230309230534096.png)
+#### 建立链接（三次握手）
+#### 传输数据
+##### Max Segment Size(MSS)
++ 如果只有IP分片，当报文丢失，TCP层需要重传所有报文（IP层不存在超时重传机制，且TCP层将整个包看作一个包）；而在TCP层进行分段后，报文丢失时只要重传丢失报文即可，大大提升了重传效率。
++ MSS一般等于MTU-sizeof(ip_header)-sizeof(tcp_header),以避免IP分片
++ 连接的两端可以使用不同的MSS值
+![](https://xiaolincoding.com/network/3_tcp/tcp_interview.html#%E5%88%9D%E5%A7%8B%E5%BA%8F%E5%88%97%E5%8F%B7-isn-%E6%98%AF%E5%A6%82%E4%BD%95%E9%9A%8F%E6%9C%BA%E4%BA%A7%E7%94%9F%E7%9A%84)
 
+#### 断开连接（四次回收）
+
+#### 拥塞控制
+
+#### 流量控制
+
+
+#### 参考
++ [传输控制协议](https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE#%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6)
++ [小林coding：网络](https://xiaolincoding.com/network/3_tcp/tcp_interview.html)
 ### UDP
 + [用户数据报协议](https://zh.wikipedia.org/zh-hans/%E7%94%A8%E6%88%B7%E6%95%B0%E6%8D%AE%E6%8A%A5%E5%8D%8F%E8%AE%AE)_
 
