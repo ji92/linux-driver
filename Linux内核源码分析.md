@@ -1354,7 +1354,7 @@ enum pageflags {
 + [小林coding：网络](https://xiaolincoding.com/network/3_tcp/tcp_interview.html)
 
 ### socket编程
-![](https://cdn.xiaolincoding.com//mysql/other/format,png-20230309230542373.png)
+![](https://cdn.xiaolincoding.com/gh/xiaolincoder/ImageHost/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/TCP-%E5%8D%8A%E8%BF%9E%E6%8E%A5%E5%92%8C%E5%85%A8%E8%BF%9E%E6%8E%A5/3.jpg)
 ![](https://cdn.xiaolincoding.com/gh/xiaolincoder/ImageHost4/%E7%BD%91%E7%BB%9C/socket%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B.drawio.png)
 ![](https://cdn.xiaolincoding.com//mysql/other/format,png-20230309230538308.png)
 
