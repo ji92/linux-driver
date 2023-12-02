@@ -1348,17 +1348,17 @@ enum pageflags {
 
 > Maximum Segment Lifetime(MSL):2MSL时长 这其实是相当于至少允许报文丢失一次
 
-
-
-
-
-
-#### 拥塞控制
-
 #### 参考
 
 + [传输控制协议](https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E6%8E%A7%E5%88%B6%E5%8D%8F%E8%AE%AE#%E6%8B%A5%E5%A1%9E%E6%8E%A7%E5%88%B6)
 + [小林coding：网络](https://xiaolincoding.com/network/3_tcp/tcp_interview.html)
+
+### socket编程
+![](https://cdn.xiaolincoding.com//mysql/other/format,png-20230309230542373.png)
+![](https://cdn.xiaolincoding.com/gh/xiaolincoder/ImageHost4/%E7%BD%91%E7%BB%9C/socket%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B.drawio.png)
+![](https://cdn.xiaolincoding.com//mysql/other/format,png-20230309230538308.png)
+
+![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20231024213527.png)
 
 ### UDP
 
@@ -1368,9 +1368,7 @@ enum pageflags {
 
 ### DCCP
 
-### socket编程
 
-![](https://raw.githubusercontent.com/ji92/markdown_picture/master/images/20231024213527.png)
 
 ## 网络层
 
